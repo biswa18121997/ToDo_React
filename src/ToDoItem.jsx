@@ -14,7 +14,7 @@ function ToDoItem({title,task,time,complete,deleteTask,toggleComp,edit,comp}){
             
                       <section className='flex border-b-2 bg-gray-300/60 w-full justify-center items-center h-1/3 rounded-3xl'>
                         
-                            <input className='m-4 '  onChange={(e)=>setCross(!cross)} type="checkbox" name="ch" id="ch" />
+                            <input className='m-4 '  onChange={(e)=>setCross(!cross)} type="checkbox" name="checkbox" />
                             <h3 className={`text-neutral-950 conic  w-full ${cross?"line-through":""}`}>Title :{title} </h3>
                             <span className={`rounded-2xl p-1 bg-amber-200 text-sm ${cross? "line-through" : ""} text-black `}>Added On:<br/>{time}</span>
                       </section>
@@ -25,9 +25,9 @@ function ToDoItem({title,task,time,complete,deleteTask,toggleComp,edit,comp}){
             
                 </div>
                 <div className='flex flex-col text-white'>
-                      <button  onClick={edit} className=' rounded-3xl bg-blue-600 w-fit h-fit p-4 m-2 active:bg-cyan-400'>Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                      <button onClick={deleteTask}  className='h-fit p-3 hover:bg-red-400 bg-red-600 rounded-3xl w-fit m-2'>DELETE <i class="fa-solid fa-trash-can"></i></button>
-                      <button onClick={toggleComp} className="active:bg-green-400 text-red-700 rounded-md bg-amber-300">Mark as Done/ Not Done <i class="fa-solid fa-check-double"></i></button>
+                      <button  onClick={edit} className=' rounded-3xl bg-blue-600 w-fit h-fit p-4 m-2 active:bg-cyan-400'>Edit <i className="fa-solid fa-pen-to-square"></i></button>
+                      <button onClick={deleteTask}  className='h-fit p-3 hover:bg-red-400 bg-red-600 rounded-3xl w-fit m-2'>DELETE <i className="fa-solid fa-trash-can"></i></button>
+                      <button onClick={toggleComp} className="active:bg-green-400 text-red-700 rounded-md bg-amber-300">Mark as Done/ Not Done <i className="fa-solid fa-check-double"></i></button>
                       <span className="text-black m-1"><i className={`${comp?"fa-regular fa-square-check":"fa-regular fa-hourglass-half"}`}></i></span>
                 </div>
          </div>

@@ -120,7 +120,7 @@ function edit(id){
   <button onClick={()=>setFilter("complete")} className={`hover:scale-105 active:bg-red-400 font-semibold duration-500   rounded-2xl w-1/3 ${filter=="complete"? "bg-neutral-600 text-white translate-y-2 " :  "bg-blue-300 m-2 " }`}>COMPLETED TASKS</button>
   {/* transition-500 */}
   </div  >
- 
+
   
     {/* {todoList.map((item,index)=>( */}
     <ToDoList   todoList={filterchanger} deleteTask={deleteTask} toggleComp={toggleComp} edit={edit}   />
