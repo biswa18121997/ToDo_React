@@ -2,6 +2,7 @@
   "name": "todoapp",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://biswa18121997.github.io/To_Do_React/",
   "type": "module",
   "scripts": {
     "dev": "vite",
