@@ -105,7 +105,7 @@ function edit(id){
 
   
   return (<div className=' p-2 bg-fixed   bg-repeat bg-cover h-full  bg-[url(https://images.pexels.com/photos/6690918/pexels-photo-6690918.jpeg?auto=compress&cs=tinysrgb&w=600)]'>
-    <h1 className='text-4xl text-center sticky top-0 font-serif  text-black font-extrabold bg-gray-100/20 p-3  '>To-Do-List</h1>
+    <h1 className='text-4xl text-center sticky top-0 font-serif  text-black font-extrabold bg-gray-100/20 p-3  '>To-Do-List <span  className='absolute right-0 mr-14 bg-white rounded-full '><a href='https://github.com/biswa18121997/To_Do_React.git'><i  className="fa-brands fa-github "></i></a></span> </h1>  
 
   <div className='sticky top-15 flex justify-center  border-t-2 bg-gray-900/50  rounded-b-4xl z-50'>
   
