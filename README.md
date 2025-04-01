@@ -48,4 +48,4 @@ A simple React-based To-Do application that allows users to add, edit, delete, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/biswa18121997/To_Do_React.git
+   git clone https://github.com/biswa18121997/ToDo_React.git
