@@ -20,14 +20,14 @@ function ToDoItem({title,task,time,complete,deleteTask,toggleComp,edit,comp}){
                       </section>
 
                       
-                      <p className={`m-4  ${cross?"line-through": ""}`}>Task:{task} </p>
+                      <p className={`m-4  ${cross?"line-through": ""}`}>Task: <br />{task} </p>
             
             
                 </div>
                 <div className='flex flex-col text-white'>
-                      <button  onClick={edit} className=' rounded-3xl bg-blue-600 w-fit h-fit p-4 m-2 active:bg-cyan-400'>Edit <i className="fa-solid fa-pen-to-square"></i></button>
+                      <button  onClick={edit} className=' rounded-3xl bg-blue-600 w-fit h-fit p-4 m-2 active:bg-cyan-400 hover:bg-blue-300'>Edit <i className="fa-solid fa-pen-to-square"></i></button>
                       <button onClick={deleteTask}  className='h-fit p-3 hover:bg-red-400 bg-red-600 rounded-3xl w-fit m-2'>DELETE <i className="fa-solid fa-trash-can"></i></button>
-                      <button onClick={toggleComp} className="active:bg-green-400 text-red-700 rounded-md bg-amber-300">Mark as Done/ Not Done <i className="fa-solid fa-check-double"></i></button>
+                      <button onClick={toggleComp} className="active:bg-green-400 text-red-700 rounded-md hover:bg-amber-100 bg-amber-300">Mark as Done/ Not Done <i className="fa-solid fa-check-double"></i></button>
                       <span className="text-black m-1"><i className={`${comp?"fa-regular fa-square-check":"fa-regular fa-hourglass-half"}`}></i></span>
                 </div>
          </div>
