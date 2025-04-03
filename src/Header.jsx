@@ -93,6 +93,24 @@ function edit(id){
               })  
               setTodoList(editted);
           }
+       else if(newtitle.length>0 && newtask.length==0){
+          let editted=todoList.map((task)=>{
+            if(task.id==id)
+                return {...task,Title:newtitle}
+              
+              return task;
+            });
+              setTodoList(editted);
+
+        }
+        else if(newtask.length>0 && newtitle.length==0){
+          let editted=todoList.map((task)=>{
+            if(task.id==id)
+                return {...task,Task:newtask};
+              return task;
+            });
+            setTodoList(editted);
+        }
           else 
             alert("enter correct values for title and task0");
 
